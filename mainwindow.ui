@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>838</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>240</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_4">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1">
+       <item>
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QCustomPlot" name="winPlot" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>380</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>380</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::DefaultContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="midLineWidth">
+             <number>0</number>
+            </property>
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
+            <property name="tabSpacing">
+             <number>6</number>
+            </property>
+            <widget class="QWidget" name="page_serialPortCfg">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>363</width>
+               <height>552</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>串口配置</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab_5">
+                 <attribute name="title">
+                  <string>串口1</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="cmbCheck_tab1">
+                    <item>
+                     <property name="text">
+                      <string>无</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>奇校验</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>偶校验</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="lblBaudRate_tab1">
+                    <property name="text">
+                     <string>波特率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QPushButton" name="btnSwitch_tab1">
+                    <property name="text">
+                     <string>打开串口</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QComboBox" name="cmbStop_tab1">
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1.5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="lblStop_tab1">
+                    <property name="text">
+                     <string>停止位</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="NewCombobox" name="cmbSerialPort_tab1"/>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblSerialPort_tab1">
+                    <property name="text">
+                     <string>串口选择</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="lblSwitch_tab1">
+                    <property name="text">
+                     <string>串口操作</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="cmbData_tab1">
+                    <property name="currentIndex">
+                     <number>3</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="lblData_tab1">
+                    <property name="text">
+                     <string>数据位</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="cmbBaudRate_tab1">
+                    <property name="editable">
+                     <bool>true</bool>
+                    </property>
+                    <property name="currentIndex">
+                     <number>10</number>
+                    </property>
+                    <property name="maxVisibleItems">
+                     <number>20</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>1200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>38400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>43000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>57600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>76800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>115200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>128000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>230400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>256000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>460800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>921600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1382400</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="lblCheck_tab1">
+                    <property name="text">
+                     <string>奇偶校验</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_6">
+                 <attribute name="title">
+                  <string>串口2</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lblSerialPort_tab2">
+                    <property name="text">
+                     <string>串口选择</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="NewCombobox" name="cmbSerialPort_tab2"/>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="lblBaudRate_tab2">
+                    <property name="text">
+                     <string>波特率</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="cmbBaudRate_tab2">
+                    <property name="editable">
+                     <bool>true</bool>
+                    </property>
+                    <property name="currentIndex">
+                     <number>10</number>
+                    </property>
+                    <property name="maxVisibleItems">
+                     <number>20</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>1200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>38400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>43000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>57600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>76800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>115200</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>128000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>230400</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>256000</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>460800</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>921600</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1382400</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="lblStop_tab2">
+                    <property name="text">
+                     <string>停止位</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QComboBox" name="cmbStop_tab2">
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1.5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="lblData_tab2">
+                    <property name="text">
+                     <string>数据位</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="cmbData_tab2">
+                    <property name="currentIndex">
+                     <number>3</number>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="lblCheck_tab2">
+                    <property name="text">
+                     <string>奇偶校验</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="cmbCheck_tab2">
+                    <item>
+                     <property name="text">
+                      <string>无</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>奇校验</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>偶校验</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="lblSwitch_tab2">
+                    <property name="text">
+                     <string>串口操作</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QPushButton" name="btnSwitch_tab2">
+                    <property name="text">
+                     <string>打开串口</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>238</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_curveCfg">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>363</width>
+               <height>552</height>
+              </rect>
+             </property>
+             <attribute name="icon">
+              <iconset>
+               <normaloff>:/chart_curve_32px_506507_easyicon.net.ico</normaloff>:/chart_curve_32px_506507_easyicon.net.ico</iconset>
+             </attribute>
+             <attribute name="label">
+              <string>曲线/散点设置</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QWidget" name="widget_3" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>335</width>
+                  <height>22</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>22</height>
+                 </size>
+                </property>
+                <widget class="QLineEdit" name="txtValueCurve1">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>0</y>
+                   <width>71</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rdoBoldCurve1">
+                 <property name="geometry">
+                  <rect>
+                   <x>90</x>
+                   <y>3</y>
+                   <width>16</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="chkVisibleCurve1">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>3</y>
+                   <width>53</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>波形1</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnColourCurve1">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>0</y>
+                   <width>21</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="cmbScatterStyle1">
+                 <property name="geometry">
+                  <rect>
+                   <x>240</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::WheelFocus</enum>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>20</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>无散点</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssNone.png</normaloff>:/pic/ssNone.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCross.png</normaloff>:/pic/ssCross.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlus.png</normaloff>:/pic/ssPlus.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>空心圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCircle.png</normaloff>:/pic/ssCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>实心圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssDisc.png</normaloff>:/pic/ssDisc.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>矩形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssSquare.png</normaloff>:/pic/ssSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>菱形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssDiamond.png</normaloff>:/pic/ssDiamond.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>星形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssStar.png</normaloff>:/pic/ssStar.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>正三角</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssTriangle.png</normaloff>:/pic/ssTriangle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>倒三角</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssTriangleInverted.png</normaloff>:/pic/ssTriangleInverted.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x框</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCrossSquare.png</normaloff>:/pic/ssCrossSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+框</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlusSquare.png</normaloff>:/pic/ssPlusSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCrossCircle.png</normaloff>:/pic/ssCrossCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlusCircle.png</normaloff>:/pic/ssPlusCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>和平</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPeace.png</normaloff>:/pic/ssPeace.png</iconset>
+                  </property>
+                 </item>
+                </widget>
+                <widget class="QComboBox" name="cmbLineStyle1">
+                 <property name="geometry">
+                  <rect>
+                   <x>190</x>
+                   <y>0</y>
+                   <width>41</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>点</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>线</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>左</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>右</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>中</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>积</string>
+                  </property>
+                 </item>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_4" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>22</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>22</height>
+                 </size>
+                </property>
+                <widget class="QLineEdit" name="txtValueCurve2">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>0</y>
+                   <width>71</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rdoBoldCurve2">
+                 <property name="geometry">
+                  <rect>
+                   <x>90</x>
+                   <y>3</y>
+                   <width>16</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="chkVisibleCurve2">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>3</y>
+                   <width>53</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>波形2</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnColourCurve2">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>0</y>
+                   <width>21</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="cmbLineStyle2">
+                 <property name="geometry">
+                  <rect>
+                   <x>190</x>
+                   <y>0</y>
+                   <width>41</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>点</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>线</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>左</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>右</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>中</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>积</string>
+                  </property>
+                 </item>
+                </widget>
+                <widget class="QComboBox" name="cmbScatterStyle2">
+                 <property name="geometry">
+                  <rect>
+                   <x>240</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::WheelFocus</enum>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>20</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>无散点</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssNone.png</normaloff>:/pic/ssNone.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCross.png</normaloff>:/pic/ssCross.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlus.png</normaloff>:/pic/ssPlus.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>空心圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCircle.png</normaloff>:/pic/ssCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>实心圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssDisc.png</normaloff>:/pic/ssDisc.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>矩形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssSquare.png</normaloff>:/pic/ssSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>菱形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssDiamond.png</normaloff>:/pic/ssDiamond.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>星形</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssStar.png</normaloff>:/pic/ssStar.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>正三角</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssTriangle.png</normaloff>:/pic/ssTriangle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>倒三角</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssTriangleInverted.png</normaloff>:/pic/ssTriangleInverted.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x框</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCrossSquare.png</normaloff>:/pic/ssCrossSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+框</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlusSquare.png</normaloff>:/pic/ssPlusSquare.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>x圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssCrossCircle.png</normaloff>:/pic/ssCrossCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>+圆</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPlusCircle.png</normaloff>:/pic/ssPlusCircle.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>和平</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/pic/ssPeace.png</normaloff>:/pic/ssPeace.png</iconset>
+                  </property>
+                 </item>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget" native="true">
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chkShowLegend">
+                   <property name="text">
+                    <string>显示图例</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>X轴主刻度数：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1" colspan="2">
+                  <widget class="QLineEdit" name="txtMainScaleNumX">
+                   <property name="text">
+                    <string>11</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>Y轴主刻度数：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" colspan="2">
+                  <widget class="QLineEdit" name="txtMainScaleNumY">
+                   <property name="text">
+                    <string>11</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="btnClearGraphs">
+                   <property name="text">
+                    <string>清空绘图</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1" colspan="2">
+                  <widget class="QPushButton" name="btnResetSettings">
+                   <property name="text">
+                    <string>重置设置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <widget class="QPushButton" name="btnColourBack">
+                     <property name="minimumSize">
+                      <size>
+                       <width>21</width>
+                       <height>21</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>21</width>
+                       <height>21</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="text">
+                      <string>绘图区背景颜色</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QCheckBox" name="chkDrawDemo">
+                   <property name="text">
+                    <string>绘图演示-曲线</string>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_6" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <widget class="QCheckBox" name="chkTrackX">
+                     <property name="text">
+                      <string>X轴跟随</string>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="chkAdjustY">
+                     <property name="text">
+                      <string>Y轴自适应</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="FramePagePoint">
+                   <property name="frameShape">
+                    <enum>QFrame::WinPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_2">
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="lblPointOrigin">
+                      <property name="text">
+                       <string>原点位置</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="lblPointCount">
+                      <property name="text">
+                       <string>页幅点数</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="lblPointCountX">
+                      <property name="text">
+                       <string>X：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="txtPointOriginX">
+                      <property name="minimumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="txtPointCountX">
+                      <property name="minimumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::StrongFocus</enum>
+                      </property>
+                      <property name="text">
+                       <string>100</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="lblPointCountY">
+                      <property name="text">
+                       <string>Y：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="txtPointOriginY">
+                      <property name="minimumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>-2</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QLineEdit" name="txtPointCountY">
+                      <property name="minimumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>81</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>80</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>182</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_imageCfg">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>363</width>
+               <height>552</height>
+              </rect>
+             </property>
+             <attribute name="icon">
+              <iconset>
+               <normaloff>:/axis_64px_1200251_easyicon.net.ico</normaloff>:/axis_64px_1200251_easyicon.net.ico</iconset>
+             </attribute>
+             <attribute name="label">
+              <string>实时图像</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QVideoWidget" name="widget_image" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="pushButton_openCam">
+                  <property name="text">
+                   <string>打开摄像头</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="NewCombobox" name="comboBox_camId"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QRadioButton" name="radioButton_reverse">
+                  <property name="text">
+                   <string>反向</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioButton_realTimeSpeed">
+                  <property name="text">
+                   <string>显示实时速度</string>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_startTime">
+                  <property name="text">
+                   <string>开始时间：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_startTime">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label_fittingTime">
+                  <property name="text">
+                   <string>碰撞时间：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_fittingTime">
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QLabel" name="label_endTime_3">
+                  <property name="text">
+                   <string>结束时间：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_endTime">
+                  <property name="text">
+                   <string>2</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_fitting">
+                <property name="text">
+                 <string>显示拟合速度</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>200</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_control">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>启动</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_pause">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>暂停</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QVideoWidget</class>
+   <extends>QWidget</extends>
+   <header>qvideowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NewCombobox</class>
+   <extends>QComboBox</extends>
+   <header>NewCombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
